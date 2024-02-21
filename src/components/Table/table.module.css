@@ -1,0 +1,42 @@
+.table {
+  display: flex;
+  background-color: #1e2124;
+  flex-direction: column;
+  border: 1px solid #7289da;
+}
+.columnHeader {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding-top: 4px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #7289da;
+  padding: 16px 8px;
+}
+.answer {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  border-bottom: 1px solid #7289da;
+  padding: 8px;
+}
+.cell {
+  flex: 1;
+}
+.titleCell {
+  flex: 2;
+}
+.guesses {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.guesses :last-child {
+  border-bottom: none;
+}
+.guess {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  border-bottom: 1px dashed #7289da;
+}
