@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  width: fit-content;
+}
+.bookInfo {
+  border: 1px solid #1e2124;
+  padding: 5px 15px;
+}
+.clueType {
+  font-weight: 550;
+  color: #7289da;
+}

@@ -19,6 +19,7 @@
   flex: 1;
   border-bottom: 1px solid #7289da;
   padding: 8px;
+  color: #7289da;
 }
 .cell {
   flex: 1;

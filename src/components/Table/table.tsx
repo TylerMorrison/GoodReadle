@@ -9,11 +9,12 @@ type Props = {
   foundAnswer: boolean;
   tooManyGuess: boolean;
   guesses: Array<Book>;
+  noPoints: boolean;
 };
 
 function Table(props: Props) {
-  const { bookOfTheDay, foundAnswer, tooManyGuess, guesses } = props;
-  const showAnswer = tooManyGuess || foundAnswer;
+  const { bookOfTheDay, foundAnswer, tooManyGuess, guesses, noPoints } = props;
+  const showAnswer = tooManyGuess || foundAnswer || noPoints;
   return (
     <div className={classes.table}>
       <div className={classes.columnHeader}>

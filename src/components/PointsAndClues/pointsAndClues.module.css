@@ -1,0 +1,19 @@
+.pointsContainer {
+  font-size: x-large;
+  margin-bottom: 16px;
+}
+.container {
+  margin-bottom: 16px;
+}
+.pointsTitle {
+  font-weight: bolder;
+  margin-right: 16px;
+}
+.clueContainer {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}

@@ -9,12 +9,15 @@ type Props = {
   books: Array<Book>;
   foundAnswer: boolean;
   tooManyGuess: boolean;
+  noPoints: boolean;
 };
 
 function TitleAndSearch(props: Props) {
-  const { addGuess, books, foundAnswer, tooManyGuess } = props;
+  const { addGuess, books, foundAnswer, tooManyGuess, noPoints } = props;
+
   const [selectedBookId, setSelectedBookId] = React.useState("");
   const [autoCompleteKey, setAutoCompleteKey] = React.useState(0);
+
   return (
     <div className={classes.container}>
       <h1>{string.title}</h1>
@@ -39,7 +42,7 @@ function TitleAndSearch(props: Props) {
             }
           }}
           className={classes.autocomplete}
-          disabled={foundAnswer || tooManyGuess}
+          disabled={foundAnswer || tooManyGuess || noPoints}
           key={autoCompleteKey}
         />
         <Button
@@ -52,7 +55,7 @@ function TitleAndSearch(props: Props) {
             if (selectedBook) addGuess(selectedBook);
             setAutoCompleteKey(autoCompleteKey + 1);
           }}
-          disabled={foundAnswer || tooManyGuess}
+          disabled={foundAnswer || tooManyGuess || noPoints}
         >
           Submit
         </Button>
